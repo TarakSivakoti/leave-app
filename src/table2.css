@@ -37,7 +37,7 @@
 .pencil::before {
   content: "\E40D";
   font-size: 1rem;
-  font-family: "Teams Assets Light";
+  font-family: "Teams Assets";
   color: #6264a7;
   cursor: pointer;
 }
