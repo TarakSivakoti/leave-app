@@ -48,3 +48,19 @@ span.month {
   border-right: 5px solid whitesmoke;
   height: 100vh;
 }
+
+@media (max-width:1440px) and (min-width:1200px){
+  .col-br {
+    height: auto;
+    border-right: 5px solid whitesmoke;
+  }
+  .name,.designation {
+    margin-left: 37%;
+}
+  leave-count {
+    margin-left: 2%;
+}
+.custom-btn {
+  margin-top: 10%;
+  }
+}
