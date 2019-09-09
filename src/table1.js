@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import Table from "react-bootstrap/Table";
 import './table1.css';
+import Rows from '../src/rows'
 export default class Table1 extends Component {
-    render() {
-        return (
-          <div>
-            <div className="table-responsive top">
-              <div className="heading">Balance Status</div>
-              <Table className="table" responsive>
+  render() {
+    return (
+      <div>
+        <div className="table-responsive top">
+          <div className="heading">Balance Status</div>
+          {/* <Table>
+            <Rows></Rows>
+          </Table> */}
+           <Table className="table" responsive> 
                 <tr className="head-tab">
                   <th>Type</th>
                   <th>
@@ -95,9 +99,9 @@ export default class Table1 extends Component {
                   <td className="count1 hide1">0</td>
                   <td className="count1 hide3">-</td>
                 </tr>
-              </Table>
-            </div>
-          </div>
-        );
-    }
+        </Table>
+        </div>
+      </div>
+    );
+  }
 }
