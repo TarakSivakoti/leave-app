@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Table from "react-bootstrap/Table";
 import './table1.css';
-import Rows from '../src/rows'
 export default class Table1 extends Component {
   render() {
     return (
