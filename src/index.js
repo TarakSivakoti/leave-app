@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { Provider, themes } from "@stardust-ui/react";
+import { Provider } from "@stardust-ui/react";
 
 ReactDOM.render(
-  <Provider theme={themes.teams}>
+  <Provider>
     <App />
   </Provider>,
   document.getElementById("root")

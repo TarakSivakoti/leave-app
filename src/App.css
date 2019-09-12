@@ -1,6 +1,9 @@
 .row {
   margin: 0;
 }
+.darkContainer{
+  color: #ffffff;
+}
 img.thumbnail {
   border-radius: 50%;
   margin-top: 20px;
