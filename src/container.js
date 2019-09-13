@@ -24,12 +24,16 @@ class Container extends React.Component {
   }
    componentDidMount() {
     microsoftTeams.initialize();
+    let theme ;
     microsoftTeams.getContext((context) => {
-      let theme = context.theme || "";
+      theme = context.theme || "";
       this.updateTheme(theme);
-      this.setState({
-        theme: theme
-      });
+    });
+    this.setState({
+      // setting set state for given keys above like theme,name,designation.
+      // theme: theme,
+      // name: "Chris",
+      // designation: "UX "
     });
 
     microsoftTeams.registerOnThemeChangeHandler((theme) => {
