@@ -9,6 +9,7 @@ import Table2 from "./table2";
 import {Provider,themes, Button } from "@stardust-ui/react";
 import { TeamsThemeContext, getContext, ThemeStyle } from 'msteams-ui-components-react';
 import * as microsoftTeams from "@microsoft/teams-js";
+
 class Container extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,7 @@ class Container extends React.Component {
       designation: "UX Designer",
       day:12,
       month:9,
-      theme: "dark",
+      theme: "",
       themeStyle: ThemeStyle.teams
     };
   }
