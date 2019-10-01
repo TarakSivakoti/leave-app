@@ -31,7 +31,7 @@ class Container extends React.Component {
     });
     this.setState({
       // setting set state for given keys above like theme,name,designation.
-      // theme: theme,
+      // theme: "contrast",
       // name: "Chris",
       // designation: "UX "
     });
