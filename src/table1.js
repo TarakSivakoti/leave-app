@@ -1,20 +1,37 @@
 import React, { Component } from "react";
 import Table from "react-bootstrap/Table";
 import "./table1.css";
+const axios = require('axios').default;
 export default class Table1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      type: "hello",
-      remaining: [],
-      used: [],
-      allowance: [],
-      message: "",data:[]
+      // type: "hello",
+      // remaining: [],
+      // used: [],
+      // allowance: [],
+      // message: "",
+      data: []
     };
   }
   componentDidMount() {
-    const data = require("../src/data/data.json");
-    this.setState({data:data})
+    // const data = require("../src/data/data.json");
+    // this.setState({ data: data })
+    // axios.get('https://reqres.in/api/users?page=2')
+    let _this = this;
+    axios.get('/data.json')
+      .then(function (response) {
+        // handle success
+        // console.log(response.data);
+        _this.setState({ data: response.data })
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
   }
   render() {
     return (
@@ -31,17 +48,17 @@ export default class Table1 extends Component {
               <th id="hide1">Allowance</th>
               <th></th>
             </tr>
-              {this.state.data&&this.state.data.map(leave=>{
-                return (
-                  <tr>
-                    <td className="header">{leave.type}</td>
-                    <td className="count">{leave.remaining}</td>
-                    <td className="used-leave">{leave.used}</td>
-                    <td className="allow">{leave.allowance}</td>
-                    <td className="msg">{leave.message}</td>
-                  </tr>
-                );
-              })}
+            {this.state.data && this.state.data.map(leave => {
+              return (
+                <tr>
+                  <td className="header">{leave.type}</td>
+                  <td className="count">{leave.remaining}</td>
+                  <td className="used-leave">{leave.used}</td>
+                  <td className="allow">{leave.allowance}</td>
+                  <td className="msg">{leave.message}</td>
+                </tr>
+              );
+            })}
           </Table>
         </div>
       </div>
