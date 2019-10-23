@@ -1,12 +1,25 @@
 import React from "react";
-import Container from './container';
+import Container from './Components/container';
+import Applyleaves from './Components/Applyleave';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <Container/>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Container />
+          </Route>
+          <Route path="/applyleaves">
+            <Applyleaves />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }
-
-export default App;
