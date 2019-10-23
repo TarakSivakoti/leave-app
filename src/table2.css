@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Teams Assets";
-  src: url("../fonts/TeamsAssets-Light.woff") format("woff"), url("../fonts/TeamsAssets-Light.woff2") format("woff2");
+  src: url("./fonts/TeamsAssets-Light.woff") format("woff"),
+    url("./fonts/TeamsAssets-Light.woff2") format("woff2");
   font-style: normal;
 }
 
@@ -16,24 +17,23 @@
   font-size: 12px;
 }
 
-.pending {
+#approval {
   color: #ffc312;
   font-family: "Segoe UI";
   font-size: 12px;
 }
 
-.approved {
+.approval1 {
   color: #92c353;
   font-family: "Segoe UI";
   font-size: 12px;
 }
 
-.declined {
+#approval2 {
   color: #c4314b;
   font-family: "Segoe UI";
   font-size: 12px;
 }
-
 .pencil::before {
   content: "\E40D";
   font-size: 1rem;
@@ -48,14 +48,14 @@
   color: #6264a7;
   cursor: pointer;
 }
-.dot::before {
-  content: "\E310";
-  color: #6264a7;
+.dot::before{
+content: "\E310";
+color: #6264a7;
   font-size: 0.9em;
   font-family: "Teams Assets";
 }
-.right-chev::before {
-  content: "\E433";
+.right-chev::before{
+    content: "\E433";
   font-size: 0.8rem;
   font-family: "Teams Assets";
   color: #6264a7;
