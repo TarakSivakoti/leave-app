@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Teams Assets";
-  src: url("../fonts/TeamsAssets-Light.woff") format("woff"), url("../fonts/TeamsAssets-Light.woff2") format("woff2");
+  src: url("./fonts/TeamsAssets-Light.woff") format("woff"),
+    url("./fonts/TeamsAssets-Light.woff2") format("woff2");
   font-style: normal;
 }
 .notifications {
