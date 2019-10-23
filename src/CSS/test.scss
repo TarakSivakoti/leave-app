@@ -1,0 +1,49 @@
+.darkContainer,
+.highContrastContainer {
+  background-color: #201f1f;
+
+  .configContainer {
+    background-color: #2d2c2c;
+  }
+
+  .designation,
+  .name,
+  .heading,
+  .head-tab,
+  .header {
+    color: white;
+  }
+  .year {
+    color: cornsilk;
+  }
+  .header1,
+  .count1 {
+    color: aqua;
+  }
+
+  leave-count {
+    color: white;
+    .day {
+      color: red;
+    }
+    .month,
+    .allow {
+      color: greenyellow;
+    }
+  }
+  .allow {
+    color: greenyellow;
+  }
+  .msg {
+    color: gold;
+  }
+  .leave_report_col1 {
+    color: white;
+    .reason-type {
+      color: greenyellow;
+    }
+  }
+  .dot::before {
+    color: white;
+  }
+}

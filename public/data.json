@@ -1,0 +1,76 @@
+[
+  {
+    "type": "Paid Leaves",
+    "remaining": 19,
+    "used": 1,
+    "allowance": 20,
+    "message": "Last used in March",
+    "leaveReport": {
+      "dates": "Thu, Sep 13 - Mon, Sep 17, 2018",
+      "type2": "PL",
+      "reason": "I am visiting home over the weekend. Will be available...",
+      "days": "2 days OFF",
+      "approvalstatus": "Pending"
+    }
+  },
+  {
+    "type": "Sick Leaves",
+    "remaining": 5,
+    "used": 7,
+    "allowance": 12,
+    "message": "Last used in August",
+    "leaveReport": {
+      "dates": "Wed, Aug 1, 2018",
+      "type2": "SL",
+      "reason": "Sickness",
+      "days": "1 days OFF",
+      "approvalstatus": "Approved"
+    }
+  },
+  {
+    "type": "Carried over from last year",
+    "alert": "Recommended to utilise for vacations",
+    "remaining": 2,
+    "used": 4,
+    "allowance": 6,
+    "message": "Recently used this month",
+    "leaveReport": {
+      "dates": "Mon, May 4-Thu, May 7, 2018",
+      "type2": "SL",
+      "reason": "Sickness",
+      "days": "4 days OFF",
+      "approvalstatus": "Approved"
+    }
+  },
+  {
+    "type": "Maternity Leaves",
+    "alert": "",
+    "remaining": 0,
+    "used": 0,
+    "allowance": 0,
+    "message": "-",
+    "leaveReport": {
+      "dates": "Fri, Apr 7-Mon, Apr 10, 2018",
+      "type2": "PL",
+      "reason": "Vacation",
+      "days": "2 days OFF",
+      "approvalstatus": "Declined"
+    }
+  },
+  {
+    "type": "Paternity Leaves",
+    "alert": "",
+    "remaining": 0,
+    "used": 0,
+    "allowance": 0,
+    "message": "-"
+  },
+  {
+    "type": "Caregiver Leaves",
+    "alert": "",
+    "remaining": 0,
+    "used": 0,
+    "allowance": 0,
+    "message": "-"
+  }
+]
